@@ -1,0 +1,19 @@
+{
+  "name": "loading-lock",
+  "repo": "cristiandouce/loading-lock",
+  "description": "Loading lock component.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/spin": "*",
+    "component/classes": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "loading-lock.css"
+  ]
+}

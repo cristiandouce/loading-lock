@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>spinn</title>
+  <link rel="stylesheet" type="text/css" href="../build/build.css">
+  <script type="text/javascript" src="../build/build.js"></script>
+  <style type="text/css">
+    body { background: #000 }
+    #example {
+      /* position:relative is REQUIRED! */
+      position: relative;
+
+      background: #ededed;
+      width:740px;
+      margin-left:auto;
+      margin-right:auto;
+      padding:5px 20px 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="example">
+    <h4>Loading Lock example</h4>
+    <a id="action"href="#">Action Trigger</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dui risus. Aliquam sit amet consequat magna. In velit dolor, placerat sed accumsan sit amet, euismod eget purus. Maecenas lacinia sem quis velit suscipit bibendum. Pellentesque turpis dolor, tincidunt sodales vulputate at, vulputate sit amet mauris. Phasellus accumsan volutpat mi congue dignissim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sed enim mauris, vitae tempus risus. Etiam vehicula vulputate nisl, in sodales nibh consectetur sit amet. Etiam placerat sodales nulla, mattis sodales velit vulputate id. Aliquam vehicula eros et justo feugiat a tincidunt arcu elementum. Nam ut turpis tellus, ut sodales mi. Vivamus suscipit ornare odio vitae dictum. Vestibulum ac augue tortor. Praesent nulla nunc, sagittis nec iaculis in, fermentum sit amet enim. Donec eu massa risus.</p>
+  </div>
+
+  <script type="text/javascript">
+    var loading = require('loading-lock');
+
+    var exampleLocker = loading(document.getElementById('example'));
+
+    document.getElementById('action').onclick = function(ev) {
+      ev.preventDefault();
+
+      // perform locking loading
+      exampleLocker.lock();
+
+      // simulate action
+      setTimeout(function() {
+        // unlock block
+        exampleLocker.unlock();
+      }, 1500);
+    };
+
+
+  </script>
+</body>
+</html>
