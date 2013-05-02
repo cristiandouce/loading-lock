@@ -3,8 +3,7 @@
 
   Loading lock component. Locks element while loading and adds spinner with [component/spin](https://github.com/component/spin).
 
-  ![1]
-  [1](http://d.pr/i/hFQ8+)
+  ![](http://d.pr/i/hFQ8+)
 
 
 ## Installation
