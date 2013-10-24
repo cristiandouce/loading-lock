@@ -2,7 +2,7 @@
   "name": "loading-lock",
   "repo": "cristiandouce/loading-lock",
   "description": "Loading lock component.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["loading", "lock", "spin", "spinner", "UI"],
   "dependencies": {
     "component/spin": "*",
