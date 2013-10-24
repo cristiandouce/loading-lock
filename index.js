@@ -33,7 +33,7 @@ function LoadingLock (el, options) {
   // create lock screen element
   // with proper css classes
   this.lockScreen = document.createElement('span');
-  this.lockScreen.classList.add('lock-spinner');
+  classes(this.lockScreen).add('lock-spinner');
 
   // insert lock screen element for
   // `spin` height a width refs
