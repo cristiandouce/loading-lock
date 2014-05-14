@@ -41,7 +41,7 @@ function LoadingLock (el, options) {
 
   // set size of spinner from el's size or options
   // defaults to `25`
-  this.size = Math.min(this.el.offsetWidth / 5, this.el.offsetHeight / 5) || options.size || 25;
+  this.size = options.size || Math.min(this.el.offsetWidth / 5, this.el.offsetHeight / 5) || 25;
 
 }
 
