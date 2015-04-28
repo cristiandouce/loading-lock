@@ -1,0 +1,16 @@
+{
+  "name": "loading-lock",
+  "repo": "cristiandouce/loading-lock",
+  "description": "Loading lock component.",
+  "version": "0.1.0",
+  "keywords": ["loading", "lock", "spin", "spinner", "UI"],
+  "dependencies": {
+    "component-spin": "*",
+    "component-classes": "*"
+  },
+  "browser": {
+    "spin": "component-spin",
+    "classes": "component-classes"
+  },
+  "license": "MIT"
+}
